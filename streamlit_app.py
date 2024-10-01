@@ -12,6 +12,8 @@ hide_streamlit_style = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             .css-1rs6os {visibility: hidden;}
+            a[title="View source"] {visibility: hidden;}
+            button[title="Fork"] {visibility: hidden;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
