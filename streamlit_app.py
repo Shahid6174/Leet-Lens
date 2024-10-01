@@ -11,13 +11,11 @@ hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
-            .css-1rs6os {visibility: hidden;}
-            a[title="View source"] {visibility: hidden;}
-            button[title="Fork"] {visibility: hidden;}
+            footer:after {content:''; visibility: hidden; display: none;}
+            .e1pxoea1 {display: none !important;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
 df = pd.read_csv('LC_Total_List.csv')
 
 st.sidebar.title("Gear Up for Success with Insights from LeetLens!")
