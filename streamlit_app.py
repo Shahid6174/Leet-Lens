@@ -7,6 +7,15 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(layout="wide", page_title="LeetLens", page_icon="🔍")
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            .css-1rs6os {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 df = pd.read_csv('LC_Total_List.csv')
 
 st.sidebar.title("Gear Up for Success with Insights from LeetLens!")
