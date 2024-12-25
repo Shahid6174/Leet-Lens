@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(layout="wide", page_title="LeetLens", page_icon="🔍")
 
+
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
